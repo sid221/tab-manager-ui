@@ -106,7 +106,14 @@ const TabManagerTest = () => {
   return (
     <StyledTabs>
       <TabManager {...tabManagerProps} />
-      <AddTabs addTabs={addTabs} />
+
+      {/* Add New Tab Form */}
+      <fieldset>
+        <legend>
+          <h2>Add Tab Form</h2>
+        </legend>
+        <AddTabs addTabs={addTabs} />
+      </fieldset>
     </StyledTabs>
   );
 };
